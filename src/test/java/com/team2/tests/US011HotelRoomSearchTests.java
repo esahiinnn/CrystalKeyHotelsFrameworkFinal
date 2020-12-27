@@ -27,7 +27,7 @@ public class US011HotelRoomSearchTests {
         eckHotelsHomePage.passwordTextBox.sendKeys(ConfigReader.getProperty("valid_password1"));
         eckHotelsHomePage.logInButton.click();
 
-        eckHotelsAdminPage.idTextBox.sendKeys(ConfigReader.getProperty(""));
+        eckHotelsAdminPage.idTextBox.sendKeys(ConfigReader.getProperty("e_id"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
