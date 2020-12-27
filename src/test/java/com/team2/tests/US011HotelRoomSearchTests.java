@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import sun.security.krb5.Config;
 
 
-public class US011Tests {
+public class US011HotelRoomSearchTests {
 
     @Test
     public void tc001() throws InterruptedException {
