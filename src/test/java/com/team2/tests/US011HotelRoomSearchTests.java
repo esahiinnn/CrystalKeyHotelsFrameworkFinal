@@ -51,12 +51,12 @@ public class US011HotelRoomSearchTests {
         eckHotelsHomePage.logInButton.click();
 
         Select select = new Select(eckHotelsAdminPage.IdHotelDropDown);
-        select.selectByVisibleText("UNAL");
+        select.selectByVisibleText(ConfigReader.getProperty("e_id_hotel"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(2000);
 
 
-        Assert.assertEquals("UNAL", eckHotelsAdminPage.idHotelDropDownSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.idHotelDropDownSonuc.getText(), ConfigReader.getProperty("e_id_hotel"));
 
         Driver.closeDriver();
     }
