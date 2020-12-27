@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US012Tests {
+public class US012HotelRoomArrangeTests {
 
     @Test
     public void tc001() throws InterruptedException {
