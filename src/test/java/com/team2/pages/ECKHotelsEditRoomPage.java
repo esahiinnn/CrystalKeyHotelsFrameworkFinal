@@ -48,7 +48,7 @@ public class ECKHotelsEditRoomPage {
     @FindBy(xpath = "//div[@class='caption']")
     public WebElement editHotelRoomTitle;
 
-    @FindBy(xpath = "(//button[@type='button'])[6]")
+    @FindBy(xpath = "//*[text()='OK']")
     public WebElement okButton;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -67,7 +67,7 @@ public class ECKHotelsEditRoomPage {
         eckHotelsHomePage.passwordTextBox.sendKeys(ConfigReader.getProperty("valid_password1"));
         eckHotelsHomePage.logInButton.click();
 
-        eckHotelsAdminPage.codeTextBox.sendKeys("428691");
+        eckHotelsAdminPage.nameTextBox.sendKeys(ConfigReader.getProperty("e_names"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
