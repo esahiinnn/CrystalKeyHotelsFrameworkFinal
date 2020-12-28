@@ -42,5 +42,9 @@ public class HotelRoomManagementPage {
     public WebElement otelOdasiKaydedildiYazisi;
     @FindBy(xpath="(//button[@type='button'])[6]")
     public WebElement okbutonu;
+    @FindBy(id="itemsExportTypes")
+    public WebElement formatDropDown;
+    @FindBy(id="btnExportTable")
+    public  WebElement indirbutonu;
 }
 
