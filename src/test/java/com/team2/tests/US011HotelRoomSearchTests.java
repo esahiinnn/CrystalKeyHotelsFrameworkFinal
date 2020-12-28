@@ -31,7 +31,7 @@ public class US011HotelRoomSearchTests {
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.idDropDownSonuc.getText(), "206");
+        Assert.assertEquals(eckHotelsAdminPage.idDropDownSonuc.getText(),ConfigReader.getProperty("e_id"));
 
         Driver.closeDriver();
         Thread.sleep(2000);
