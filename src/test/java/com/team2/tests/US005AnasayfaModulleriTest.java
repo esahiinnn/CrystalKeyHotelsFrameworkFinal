@@ -16,9 +16,9 @@ public class US005AnasayfaModulleriTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertTrue(ckHotelsHomePage.hotelListText.getText().equals(ConfigReader.getProperty("hotel_list_text")));
-        softAssert.assertTrue(ckHotelsHomePage.hotelRoomsText.getText().equals(ConfigReader.getProperty("hotel_rooms_text")));
-        softAssert.assertTrue(ckHotelsHomePage.roomReservasyonText.getText().equals(ConfigReader.getProperty("room_reservasyon_text")));
+        softAssert.assertTrue(ckHotelsHomePage.hotelListText.getText().equals(ConfigReader.getProperty("h_hotel_list_text")));
+        softAssert.assertTrue(ckHotelsHomePage.hotelRoomsText.getText().equals(ConfigReader.getProperty("h_hotel_rooms_text")));
+        softAssert.assertTrue(ckHotelsHomePage.roomReservasyonText.getText().equals(ConfigReader.getProperty("h_room_reservasyon_text")));
 
         softAssert.assertAll();
 
