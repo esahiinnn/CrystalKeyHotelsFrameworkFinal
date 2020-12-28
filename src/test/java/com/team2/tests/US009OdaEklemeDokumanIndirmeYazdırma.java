@@ -7,7 +7,7 @@ import com.team2.utilities.Driver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class US008OdaEklemeDokumanIndirmeYazdırma {
+public class US009OdaEklemeDokumanIndirmeYazdırma {
     @Test
     public void tc001() throws InterruptedException {
 
