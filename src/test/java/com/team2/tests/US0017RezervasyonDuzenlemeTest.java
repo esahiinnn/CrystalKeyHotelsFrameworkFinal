@@ -35,15 +35,15 @@ public class US0017RezervasyonDuzenlemeTest {
             }
         Driver.getDriver().switchTo().window(ikincisayfaWindowHandle);
         ckHotelsHomePage.codeText.clear();
-        ckHotelsHomePage.codeText.sendKeys(ConfigReader.getProperty("generalData_codeText"));
+        ckHotelsHomePage.codeText.sendKeys(ConfigReader.getProperty("h_generalData_codeText"));
         ckHotelsHomePage.nameText.clear();
-        ckHotelsHomePage.nameText.sendKeys(ConfigReader.getProperty("generalData_NameText"));
+        ckHotelsHomePage.nameText.sendKeys(ConfigReader.getProperty("h_generalData_NameText"));
         ckHotelsHomePage.addressText.clear();
-        ckHotelsHomePage.addressText.sendKeys(ConfigReader.getProperty("generalData_AddressText"));
+        ckHotelsHomePage.addressText.sendKeys(ConfigReader.getProperty("h_generalData_AddressText"));
         ckHotelsHomePage.phoneText.clear();
-        ckHotelsHomePage.phoneText.sendKeys(ConfigReader.getProperty("generalData_PhoneText"));
+        ckHotelsHomePage.phoneText.sendKeys(ConfigReader.getProperty("h_generalData_PhoneText"));
         ckHotelsHomePage.emailText.clear();
-        ckHotelsHomePage.emailText.sendKeys(ConfigReader.getProperty("generalData_EmailText"));
+        ckHotelsHomePage.emailText.sendKeys(ConfigReader.getProperty("h_generalData_EmailText"));
 
 
         Actions actions = new Actions(Driver.getDriver());
@@ -51,7 +51,7 @@ public class US0017RezervasyonDuzenlemeTest {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
         Select select = new Select(ckHotelsHomePage.hotelDropdown);
-        select.selectByVisibleText(ConfigReader.getProperty("hotel_type"));
+        select.selectByVisibleText(ConfigReader.getProperty("h_hotel_type"));
 
         ckHotelsHomePage.saveButton.click();
 
@@ -62,9 +62,9 @@ public class US0017RezervasyonDuzenlemeTest {
         Thread.sleep(3000);
         ckHotelsHomePage.okButton.click();
 
-        Assert.assertEquals(updateMessage,ConfigReader.getProperty("hotelUpdate_successMessage"));
+        Assert.assertEquals(updateMessage,ConfigReader.getProperty("h_hotelUpdate_successMessage"));
 
-        Driver.getDriver().quit();
+        Driver.closeDriver();
         }
     @Test
     public void otelOdasíSilmeTesti() throws InterruptedException {
@@ -77,9 +77,14 @@ public class US0017RezervasyonDuzenlemeTest {
 
         ckHotelsHomePage.deleteRoom.click();
 
+        Thread.sleep(2000);
+
+        String onayUrl= Driver.getDriver().getCurrentUrl();
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(onayUrl.equals(ConfigReader.getProperty("h_onay_url")));
         ckHotelsHomePage.okButton.click();
 
-        Driver.getDriver().quit();
+        Driver.closeDriver();
 
     }
     @Test
@@ -110,17 +115,17 @@ public class US0017RezervasyonDuzenlemeTest {
 
         WebElement dropdown=ckHotelsHomePage.otelPropertiesDropdown;
         Select select = new Select(dropdown);
-        select.selectByVisibleText(ConfigReader.getProperty("hotel_propery"));
+        select.selectByVisibleText(ConfigReader.getProperty("h_hotel_propery"));
 
-        ckHotelsHomePage.codePropertyTextBox.sendKeys(ConfigReader.getProperty("generalData_codeText"));
-        ckHotelsHomePage.valuePropertyTextBox.sendKeys(ConfigReader.getProperty("generalData_value"));
+        ckHotelsHomePage.codePropertyTextBox.sendKeys(ConfigReader.getProperty("h_generalData_codeText"));
+        ckHotelsHomePage.valuePropertyTextBox.sendKeys(ConfigReader.getProperty("h_generalData_value"));
         ckHotelsHomePage.savePropertyButton.click();
 
         Thread.sleep(1000);
         String addValueMessage= ckHotelsHomePage.addValueMessage.getText();
 
         System.out.println(addValueMessage);
-        String expectedMessage="Value added";
+        String expectedMessage=ConfigReader.getProperty("h_value_added");
         System.out.println(expectedMessage);
         Thread.sleep(2000);
         SoftAssert softAssert = new SoftAssert();
@@ -155,14 +160,14 @@ public class US0017RezervasyonDuzenlemeTest {
         ckHotelsHomePage.propertiesLink.click();
         Thread.sleep(1000);
         ckHotelsHomePage.propertyCodeTextBox.clear();
-        ckHotelsHomePage.propertyCodeTextBox.sendKeys(ConfigReader.getProperty("generalData_codeText"));
+        ckHotelsHomePage.propertyCodeTextBox.sendKeys(ConfigReader.getProperty("h_generalData_codeText"));
         Thread.sleep(1000);
         ckHotelsHomePage.propertyValueTextBox.clear();
-        ckHotelsHomePage.propertyValueTextBox.sendKeys(ConfigReader.getProperty("generalData_value"));
+        ckHotelsHomePage.propertyValueTextBox.sendKeys(ConfigReader.getProperty("h_generalData_value"));
         ckHotelsHomePage.propertyUpdateButton.click();
         Thread.sleep(1000);
 
-        String propertyUpdatePopupText=ConfigReader.getProperty("valueUpdate_successMessage");
+        String propertyUpdatePopupText=ConfigReader.getProperty("h_valueUpdate_successMessage");
         String expectedPopUpText=ckHotelsHomePage.propertyUpdatePopupText.getText();
 
 
@@ -173,7 +178,7 @@ public class US0017RezervasyonDuzenlemeTest {
 
         ckHotelsHomePage.okButton.click();
 
-        Driver.getDriver().quit();
+        Driver.closeDriver();
     }
     @Test
     public void otelPropertyRemoveTesti() throws InterruptedException {
@@ -208,13 +213,13 @@ public class US0017RezervasyonDuzenlemeTest {
         Thread.sleep(1000);
 
         String mesaj = ckHotelsHomePage.valueDeletedMessage.getText();
-        String expectedMessage= ConfigReader.getProperty("valueDelete_successMessage");
+        String expectedMessage= ConfigReader.getProperty("h_valueDelete_successMessage");
 
         softAssert.assertTrue(mesaj.equals(expectedMessage));
 
         softAssert.assertAll();
 
-        Driver.getDriver().quit();
+        Driver.closeDriver();
     }
 }
 
