@@ -73,11 +73,11 @@ public class US011HotelRoomSearchTests {
         eckHotelsHomePage.logInButton.click();
 
         actions.click(eckHotelsAdminPage.codeTextBox).perform();
-        eckHotelsAdminPage.codeTextBox.sendKeys(ConfigReader.getProperty("e_codef"));
+        eckHotelsAdminPage.codeTextBox.sendKeys(ConfigReader.getProperty("e_codes"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.codeTextSonuc.getText(), ConfigReader.getProperty("e_code"));
+        Assert.assertEquals(eckHotelsAdminPage.codeTextSonuc.getText(), ConfigReader.getProperty("e_codes") );
 
         Driver.closeDriver();
     }
@@ -98,7 +98,7 @@ public class US011HotelRoomSearchTests {
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.nameTextSonuc.getText(), ConfigReader.getProperty("e_name"));
+        Assert.assertEquals(eckHotelsAdminPage.nameTextSonuc.getText(), ConfigReader.getProperty("e_namef"));
 
         Driver.closeDriver();
     }
@@ -119,7 +119,7 @@ public class US011HotelRoomSearchTests {
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.locationTextSonuc.getText(), ConfigReader.getProperty("e_location"));
+        Assert.assertEquals(eckHotelsAdminPage.locationTextSonuc.getText(), ConfigReader.getProperty("e_locationf"));
 
         Driver.closeDriver();
     }
@@ -140,7 +140,7 @@ public class US011HotelRoomSearchTests {
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.priceTextSonuc.getText(), ConfigReader.getProperty("e_pricef"));
+        Assert.assertEquals(eckHotelsAdminPage.priceTextSonuc.getText(), ConfigReader.getProperty("e_price_real"));
 
         Driver.closeDriver();
     }
