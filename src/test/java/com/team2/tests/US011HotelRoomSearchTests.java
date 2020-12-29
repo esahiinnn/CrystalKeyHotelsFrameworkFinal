@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import sun.security.krb5.Config;
 
 
-public class US011Tests {
+public class US011HotelRoomSearchTests {
 
     @Test
     public void tc001() throws InterruptedException {
@@ -27,11 +27,11 @@ public class US011Tests {
         eckHotelsHomePage.passwordTextBox.sendKeys(ConfigReader.getProperty("valid_password1"));
         eckHotelsHomePage.logInButton.click();
 
-        eckHotelsAdminPage.idTextBox.sendKeys(ConfigReader.getProperty(""));
+        eckHotelsAdminPage.idTextBox.sendKeys(ConfigReader.getProperty("e_id"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(eckHotelsAdminPage.idDropDownSonuc.getText(), "206");
+        Assert.assertEquals(eckHotelsAdminPage.idDropDownSonuc.getText(),ConfigReader.getProperty("e_id"));
 
         Driver.closeDriver();
         Thread.sleep(2000);
@@ -51,12 +51,12 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         Select select = new Select(eckHotelsAdminPage.IdHotelDropDown);
-        select.selectByVisibleText("UNAL");
+        select.selectByVisibleText(ConfigReader.getProperty("e_id_hotel"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(2000);
 
 
-        Assert.assertEquals("UNAL", eckHotelsAdminPage.idHotelDropDownSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.idHotelDropDownSonuc.getText(), ConfigReader.getProperty("e_id_hotel"));
 
         Driver.closeDriver();
     }
@@ -73,11 +73,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         actions.click(eckHotelsAdminPage.codeTextBox).perform();
-        eckHotelsAdminPage.codeTextBox.sendKeys("428686");
+        eckHotelsAdminPage.codeTextBox.sendKeys(ConfigReader.getProperty("e_codes"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(ConfigReader.getProperty("e_code"), eckHotelsAdminPage.codeTextSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.codeTextSonuc.getText(), ConfigReader.getProperty("e_codes") );
 
         Driver.closeDriver();
     }
@@ -94,11 +94,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         actions.click(eckHotelsAdminPage.nameTextBox).perform();
-        eckHotelsAdminPage.nameTextBox.sendKeys("Chris");
+        eckHotelsAdminPage.nameTextBox.sendKeys(ConfigReader.getProperty("e_namef"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(ConfigReader.getProperty("e_name"), eckHotelsAdminPage.nameTextSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.nameTextSonuc.getText(), ConfigReader.getProperty("e_namef"));
 
         Driver.closeDriver();
     }
@@ -115,11 +115,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         actions.click(eckHotelsAdminPage.locationTextBox).perform();
-        eckHotelsAdminPage.locationTextBox.sendKeys("California San Francisco Lincoln Road USA");
+        eckHotelsAdminPage.locationTextBox.sendKeys(ConfigReader.getProperty("e_locationf"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals(ConfigReader.getProperty("e_location"), eckHotelsAdminPage.locationTextSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.locationTextSonuc.getText(), ConfigReader.getProperty("e_locationf"));
 
         Driver.closeDriver();
     }
@@ -136,11 +136,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         actions.click(eckHotelsAdminPage.priceTextBox).perform();
-        eckHotelsAdminPage.priceTextBox.sendKeys("400");
+        eckHotelsAdminPage.priceTextBox.sendKeys(ConfigReader.getProperty("e_pricef"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals("400.00", eckHotelsAdminPage.priceTextSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.priceTextSonuc.getText(), ConfigReader.getProperty("e_price_real"));
 
         Driver.closeDriver();
     }
@@ -157,11 +157,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         Select select = new Select(eckHotelsAdminPage.IDGroupRoomTypeDropDown);
-        select.selectByVisibleText("Queen");
+        select.selectByVisibleText(ConfigReader.getProperty("e_room_typef"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertEquals("Queen", eckHotelsAdminPage.IDGroupRoomTypeSonuc.getText());
+        Assert.assertEquals(eckHotelsAdminPage.IDGroupRoomTypeSonuc.getText(), ConfigReader.getProperty("e_room_typef"));
         Driver.closeDriver();
 
     }
@@ -178,11 +178,11 @@ public class US011Tests {
         eckHotelsHomePage.logInButton.click();
 
         Select select = new Select(eckHotelsAdminPage.isAvailableDropDown);
-        select.selectByVisibleText("True");
+        select.selectByVisibleText(ConfigReader.getProperty("e_is_available"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
-        Assert.assertTrue(eckHotelsAdminPage.isAvailableSonuc.isSelected());
+        Assert.assertEquals(select.getFirstSelectedOption().getText(), ConfigReader.getProperty("e_is_available"));
 
         Driver.closeDriver();
     }

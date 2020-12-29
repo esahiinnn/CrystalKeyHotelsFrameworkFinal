@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US012Tests {
+public class US012HotelRoomArrangeTests {
 
     @Test
     public void tc001() throws InterruptedException {
@@ -25,6 +25,7 @@ public class US012Tests {
 
         Select select = new Select(eckHotelsEditRoomPage.hotelDropDown);
         select.selectByVisibleText("UNAL");
+        String secilmisSecenek = select.getFirstSelectedOption().getText();
 
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
@@ -32,11 +33,13 @@ public class US012Tests {
 
         eckHotelsEditRoomPage.saveButton.click();
         Thread.sleep(2000);
-        Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
+        Assert.assertEquals( eckHotelsEditRoomPage.successMessage.getText(), ConfigReader.getProperty("e_success_message"));
 
-        actions.click(eckHotelsEditRoomPage.okButton).sendKeys(Keys.PAGE_UP).perform();
+        Thread.sleep(1000);
+        eckHotelsEditRoomPage.okButton.click();
 
-        Assert.assertTrue(select.getFirstSelectedOption().getText().equalsIgnoreCase("UNAL"));
+        Thread.sleep(1000);
+        Assert.assertEquals(secilmisSecenek, ConfigReader.getProperty("e_id_hotel"));
 
     }
 
@@ -58,7 +61,7 @@ public class US012Tests {
 
         eckHotelsEditRoomPage.saveButton.click();
         Thread.sleep(2000);
-        Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
+        Assert.assertEquals(eckHotelsEditRoomPage.successMessage.getText(), ConfigReader.getProperty("e_success_message"));
 
         actions.click(eckHotelsEditRoomPage.okButton).sendKeys(Keys.PAGE_UP).perform();
         Thread.sleep(2000);
