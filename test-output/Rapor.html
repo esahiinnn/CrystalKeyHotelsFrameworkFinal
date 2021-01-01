@@ -35,7 +35,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>amazon Arama Automation Reports</span>
@@ -44,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 31, 2020 04:09:18 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 1, 2021 12:42:46 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,6 +61,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +104,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='88.889%'><span class='strong'>8</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11.111%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -123,19 +125,19 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:09:18 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>us10ApprovedsizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:42:47 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:09:18 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:09:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+197ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:42:47 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:43:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+963ms</span>
 </div>
-<div class='test-desc'>Id ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>Approvedsiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -148,78 +150,186 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:28 PM</td>
+				<td class='timestamp'>12:43:04 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:28 PM</td>
+				<td class='timestamp'>12:43:05 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:28 PM</td>
+				<td class='timestamp'>12:43:05 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:35 PM</td>
+				<td class='timestamp'>12:43:05 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:35 PM</td>
+				<td class='timestamp'>12:43:06 PM</td>
 				<td class='step-details'>
-						Id text box'a valid bir data girildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:35 PM</td>
+				<td class='timestamp'>12:43:06 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
 					
 				</td>
 			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:09:38 PM</td>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:06 PM</td>
 				<td class='step-details'>
-						Hotel room search with Id testi basariliyla gerceklestirildi
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:06 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:07 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:07 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretleme
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:07 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:12 PM</td>
+				<td class='step-details'>
+						5 saniye bekle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:12 PM</td>
+				<td class='step-details'>
+						'hotel olusturuldu' yazisini gor
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:12 PM</td>
+				<td class='step-details'>
+						room olustu,test failed
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:43:13 PM</td>
+				<td class='step-details'>
+						approvedsuzRoomOlusturamama
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:43:13 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.team2.tests.US010RoomOlusturamamaTestler.approvedsuzRoomOlusturamama(US010RoomOlusturamamaTestler.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
 					
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\fatih38\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/approvedsuzRoomOlusturamama20210101124312.png' src='C:\Users\fatih38\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/approvedsuzRoomOlusturamama20210101124312.png' data-src='C:\Users\fatih38\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/approvedsuzRoomOlusturamama20210101124312.png'></li>
+						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:09:41 PM</span>
+						<span class='test-name'>us10CodesuzRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:43:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:09:41 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:10:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+115ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:43:13 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:43:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+191ms</span>
 </div>
-<div class='test-desc'>IdHotel ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>codesuz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -232,57 +342,113 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:48 PM</td>
+				<td class='timestamp'>12:43:29 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:48 PM</td>
+				<td class='timestamp'>12:43:29 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:49 PM</td>
+				<td class='timestamp'>12:43:29 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ini bos birak
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:59 PM</td>
+				<td class='timestamp'>12:43:29 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:09:59 PM</td>
+				<td class='timestamp'>12:43:29 PM</td>
 				<td class='step-details'>
-						IdHotel drop down'undan valid bir hotel secildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:00 PM</td>
+				<td class='timestamp'>12:43:30 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:30 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:30 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:30 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:31 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:31 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:31 PM</td>
+				<td class='step-details'>
+						sayfanin en ustune gel
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:31 PM</td>
+				<td class='step-details'>
+						'code' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:10:02 PM</td>
+				<td class='timestamp'>12:43:31 PM</td>
 				<td class='step-details'>
-						Hotel room search with IdHotel testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -293,17 +459,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:10:02 PM</span>
+						<span class='test-name'>us10LocationsizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:43:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:10:02 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:10:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+518ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:43:31 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:43:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+343ms</span>
 </div>
-<div class='test-desc'>Code ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>locationsiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -316,57 +482,113 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:12 PM</td>
+				<td class='timestamp'>12:43:45 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:12 PM</td>
+				<td class='timestamp'>12:43:46 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:12 PM</td>
+				<td class='timestamp'>12:43:46 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:19 PM</td>
+				<td class='timestamp'>12:43:46 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:19 PM</td>
+				<td class='timestamp'>12:43:46 PM</td>
 				<td class='step-details'>
-						Code text box'ina valid bir data girildi
+						location textbox ini bos birak
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:19 PM</td>
+				<td class='timestamp'>12:43:46 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:46 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi gir
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						sayfanin en ustune gel
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:43:47 PM</td>
+				<td class='step-details'>
+						'location' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:10:22 PM</td>
+				<td class='timestamp'>12:43:47 PM</td>
 				<td class='step-details'>
-						Hotel room search with Code testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -377,17 +599,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:10:22 PM</span>
+						<span class='test-name'>us10MaxAdultCountsizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:43:48 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:10:22 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:10:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+510ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:43:48 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:44:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+691ms</span>
 </div>
-<div class='test-desc'>Name ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>MaxAdultCountsiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -400,57 +622,105 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:30 PM</td>
+				<td class='timestamp'>12:44:03 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:30 PM</td>
+				<td class='timestamp'>12:44:03 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:30 PM</td>
+				<td class='timestamp'>12:44:04 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:37 PM</td>
+				<td class='timestamp'>12:44:04 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:38 PM</td>
+				<td class='timestamp'>12:44:04 PM</td>
 				<td class='step-details'>
-						Name text box'a valid data girildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:38 PM</td>
+				<td class='timestamp'>12:44:04 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ini bos birak
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:05 PM</td>
+				<td class='step-details'>
+						'MaxAdultCount' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:10:41 PM</td>
+				<td class='timestamp'>12:44:05 PM</td>
 				<td class='step-details'>
-						Hotel room search with Name testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -461,17 +731,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:10:41 PM</span>
+						<span class='test-name'>us10maxChildCountsizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:44:06 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:10:41 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:11:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+892ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:44:06 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:44:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+633ms</span>
 </div>
-<div class='test-desc'>Location ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>maxChildCountsiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -484,57 +754,105 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:49 PM</td>
+				<td class='timestamp'>12:44:21 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:49 PM</td>
+				<td class='timestamp'>12:44:21 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:49 PM</td>
+				<td class='timestamp'>12:44:22 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:56 PM</td>
+				<td class='timestamp'>12:44:22 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:57 PM</td>
+				<td class='timestamp'>12:44:22 PM</td>
 				<td class='step-details'>
-						Location text box'a valid data girildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:10:57 PM</td>
+				<td class='timestamp'>12:44:22 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ini bos birak
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:23 PM</td>
+				<td class='step-details'>
+						'maxChildCount' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:11:00 PM</td>
+				<td class='timestamp'>12:44:23 PM</td>
 				<td class='step-details'>
-						Hotel room search with Location testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -545,17 +863,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:11:00 PM</span>
+						<span class='test-name'>us10NamesizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:44:24 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:11:00 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:11:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+620ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:44:24 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:44:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+685ms</span>
 </div>
-<div class='test-desc'>Price ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>namesiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -568,57 +886,113 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:07 PM</td>
+				<td class='timestamp'>12:44:39 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:08 PM</td>
+				<td class='timestamp'>12:44:39 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:08 PM</td>
+				<td class='timestamp'>12:44:39 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:17 PM</td>
+				<td class='timestamp'>12:44:39 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ini bos birak
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:17 PM</td>
+				<td class='timestamp'>12:44:40 PM</td>
 				<td class='step-details'>
-						Price text box'ina valid data girildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:17 PM</td>
+				<td class='timestamp'>12:44:40 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:40 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						sayfanin en ustune gel
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:41 PM</td>
+				<td class='step-details'>
+						'name' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:11:20 PM</td>
+				<td class='timestamp'>12:44:41 PM</td>
 				<td class='step-details'>
-						Hotel room search with price testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -629,17 +1003,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:11:20 PM</span>
+						<span class='test-name'>us10PricesizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:44:42 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:11:20 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:11:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+228ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:44:42 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:44:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+716ms</span>
 </div>
-<div class='test-desc'>RoomType ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>pricesiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -652,57 +1026,105 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:28 PM</td>
+				<td class='timestamp'>12:44:56 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password gir
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:28 PM</td>
+				<td class='timestamp'>12:44:56 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:28 PM</td>
+				<td class='timestamp'>12:44:57 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:35 PM</td>
+				<td class='timestamp'>12:44:57 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:35 PM</td>
+				<td class='timestamp'>12:44:57 PM</td>
 				<td class='step-details'>
-						IDGroupRoomType dropdown'undan valid bir data secildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:36 PM</td>
+				<td class='timestamp'>12:44:57 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ini bos birak
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:57 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:58 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:58 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:58 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:58 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:44:58 PM</td>
+				<td class='step-details'>
+						'price' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:11:39 PM</td>
+				<td class='timestamp'>12:44:58 PM</td>
 				<td class='step-details'>
-						Hotel room search with IDGroupRoomType dropdown testi basariliyla gerceklestirildi
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -713,17 +1135,17 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>CrystalKeyHotels Room Search</span>
-						<span class='test-time'>Dec 31, 2020 04:11:39 PM</span>
+						<span class='test-name'>us10RoomTypesizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:44:58 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 31, 2020 04:11:39 PM</span>
-	<span class='label end-time'>Dec 31, 2020 04:12:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+409ms</span>
+	<span class='label start-time'>Jan 1, 2021 12:44:58 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:45:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+17ms</span>
 </div>
-<div class='test-desc'>isAvailable ile oda aramasi yapilabilmeli </div>
+<div class='test-desc'>roomtypesiz room olusmadigini test ettik </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -736,57 +1158,245 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:48 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						Kullanici CrystalKeyHotels Room Admin sayfasina gitti
+						login ekraninda valid username ve password yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:48 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						Valid username girildi
+						idhotel dropdown indan hotel sec
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:11:48 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						Valid password girildi
+						code texbox ina code yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:12:05 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						Login butonuna basildi
+						name textbox ina name yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:12:05 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						isAvailable dropdown'undan valid bir data secildi
+						location textbox ina location yaz
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:12:05 PM</td>
+				<td class='timestamp'>12:45:14 PM</td>
 				<td class='step-details'>
-						Search butonuna basildi
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:14 PM</td>
+				<td class='step-details'>
+						roomtype dropdown ini bos birak
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:15 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:15 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:15 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:15 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:15 PM</td>
+				<td class='step-details'>
+						'roomtype' hata yazisini gor
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:12:08 PM</td>
+				<td class='timestamp'>12:45:15 PM</td>
 				<td class='step-details'>
-						Hotel room search with isAvailable dropdown testi basariliyla gerceklestirildi
+						room olusmadi,test pass
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>us10idHotelsizRoomOlusturamama</span>
+						<span class='test-time'>Jan 1, 2021 12:45:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 12:45:16 PM</span>
+	<span class='label end-time'>Jan 1, 2021 12:45:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+396ms</span>
+</div>
+<div class='test-desc'>idhotelsiz room olusmadigini test ettik </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:34 PM</td>
+				<td class='step-details'>
+						login ekraninda valid username ve password yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:34 PM</td>
+				<td class='step-details'>
+						idhotel dropdown ini ini bos birak
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:34 PM</td>
+				<td class='step-details'>
+						code texbox ina code yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:34 PM</td>
+				<td class='step-details'>
+						name textbox ina name yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:35 PM</td>
+				<td class='step-details'>
+						location textbox ina location yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:35 PM</td>
+				<td class='step-details'>
+						price textbox ina price yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:35 PM</td>
+				<td class='step-details'>
+						roomtype dropdown indan roomtype sec
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:35 PM</td>
+				<td class='step-details'>
+						maxAdultCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						maxChildCount textbox ina sayi yaz
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						approve kutucugunu isaretle
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						save butonuna click yap
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						sayfanin en ustune gel
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						'select hotel' hata yazisini gor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:45:36 PM</td>
+				<td class='step-details'>
+						room olusmadi,test pass
 					
 				</td>
 			</tr>
@@ -815,7 +1425,95 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 1, 2021 12:42:47 PM</td>
+										<td class='linked' test-id='1'>us10ApprovedsizRoomOlusturamama</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.team2.tests.US010RoomOlusturamamaTestler.approvedsuzRoomOlusturamama(US010RoomOlusturamamaTestler.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -823,7 +1521,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -835,19 +1533,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 31, 2020 04:09:18 PM</div>
+					<div class='panel-lead'>Jan 1, 2021 12:42:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 31, 2020 04:12:08 PM</div>
+			 		<div class='panel-lead'>Jan 1, 2021 12:45:36 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 49s+960ms</div>
+					<div class='panel-lead'>0h 2m 50s+43ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -882,14 +1580,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 8,
+                parentCount: 9,
 				passParent: 8,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -914,7 +1612,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "CrystalKeyHotels Room Search":20.197,"CrystalKeyHotels Room Search":21.115,"CrystalKeyHotels Room Search":20.518,"CrystalKeyHotels Room Search":18.51,"CrystalKeyHotels Room Search":18.892,"CrystalKeyHotels Room Search":20.62,"CrystalKeyHotels Room Search":18.228,"CrystalKeyHotels Room Search":29.409
+			        "us10ApprovedsizRoomOlusturamama":25.963,"us10CodesuzRoomOlusturamama":18.191,"us10LocationsizRoomOlusturamama":16.343,"us10MaxAdultCountsizRoomOlusturamama":17.691,"us10maxChildCountsizRoomOlusturamama":17.633,"us10NamesizRoomOlusturamama":17.685,"us10PricesizRoomOlusturamama":16.716,"us10RoomTypesizRoomOlusturamama":17.017,"us10idHotelsizRoomOlusturamama":20.396
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
