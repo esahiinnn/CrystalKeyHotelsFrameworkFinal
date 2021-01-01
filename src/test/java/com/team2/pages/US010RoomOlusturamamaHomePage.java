@@ -57,13 +57,16 @@ public class US010RoomOlusturamamaHomePage {
     public WebElement maxAdultCountHataYazisi;
     @FindBy(xpath = "//label[@for='MaxChildCount']")
     public WebElement maxChildCountHataYazisi;
+    @FindBy(xpath = "//span[@class='hidden-480']")
+    public WebElement addHotelRoombutonu;
 
     @Test
     public void login(){
-        Driver.getDriver().get(ConfigReader.getProperty("url_rooom_olusturma"));
-        usernameTextbox.sendKeys(ConfigReader.getProperty("valid_usarname1"));
+        Driver.getDriver().get(ConfigReader.getProperty("ck_hotels_admin_hotel_rooms_url"));
+        usernameTextbox.sendKeys(ConfigReader.getProperty("valid_username1"));
         passwordTextbox.sendKeys(ConfigReader.getProperty("valid_password1"));
         loginButton.click();
+        addHotelRoombutonu.click();
     }
 
 
