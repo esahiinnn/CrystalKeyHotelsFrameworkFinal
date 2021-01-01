@@ -41,15 +41,14 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals( eckHotelsEditRoomPage.successMessage.getText(), ConfigReader.getProperty("e_success_message"));
-        extentTest.info("Hotel odasinin Hotel'i degistirilebildiginin testi yapildi");
+        extentTest.pass("Hotel odasinin Hotel'i degistirilebildiginin testi yapildi");
 
         Thread.sleep(1000);
         eckHotelsEditRoomPage.okButton.click();
         extentTest.info("Okey butonuna basildi");
 
-        Thread.sleep(1000);
-        Assert.assertEquals(secilmisSecenek, ConfigReader.getProperty("e_id_hotel"));
 
+        Driver.closeDriver();
     }
 
     @Test
@@ -76,13 +75,9 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(eckHotelsEditRoomPage.successMessage.getText(), ConfigReader.getProperty("e_success_message"));
-        extentTest.info("Hotel odasinin Code'u degistirilebildinin testi yapildi");
-        actions.click(eckHotelsEditRoomPage.okButton).sendKeys(Keys.PAGE_UP).perform();
-        Thread.sleep(2000);
+        extentTest.pass("Hotel odasinin Code'u degistirilebildinin testi yapildi");
 
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(eckHotelsEditRoomPage.codeTextBox.getText(),ConfigReader.getProperty("e_codes"));
-
+        Driver.closeDriver();
     }
 
     @Test
@@ -94,23 +89,24 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
 
         eckHotelsEditRoomPage.nameTextBox.clear();
+        extentTest.info("Name text box'indaki veriler silindi");
         eckHotelsEditRoomPage.nameTextBox.sendKeys(ConfigReader.getProperty("e_id_hotel"));
+        extentTest.info("Name text box'ina valid datalar girildi");
 
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-
-        actions.click(eckHotelsEditRoomPage.okButton).sendKeys(Keys.PAGE_UP).perform();
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(eckHotelsEditRoomPage.nameTextBox.getText(),ConfigReader.getProperty("e_id_hotel"));
+        extentTest.pass("Hotel odasinin Name'i degistirilebildinin testi yapildi");
+        Driver.closeDriver();
 
     }
 
@@ -123,24 +119,24 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
 
         eckHotelsEditRoomPage.priceTextBox.clear();
+        extentTest.info("Price text box'indaki veriler silindi");
         eckHotelsEditRoomPage.priceTextBox.sendKeys(ConfigReader.getProperty("e_pricef"));
+        extentTest.info("Price text box'ina valid datalar girildi");
 
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-
-        actions.click(eckHotelsEditRoomPage.okButton).sendKeys(Keys.PAGE_UP).perform();
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(eckHotelsEditRoomPage.priceTextBox.getText(), "300");
-
+        extentTest.pass("Hotel odasinin Price'i degistirilebildinin testi yapildi");
+        Driver.closeDriver();
     }
 
     @Test
@@ -152,22 +148,22 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
-
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
         Select select = new Select(eckHotelsEditRoomPage.roomTypeDropDown);
         select.selectByVisibleText(ConfigReader.getProperty("e_room_typef"));
+        extentTest.info("Room type drop down'undan valid bir data secildi");
 
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(select.getFirstSelectedOption().getText(), ConfigReader.getProperty("e_room_typef"));
-
+        extentTest.pass("Hotel odasinin RoomType'i degistirilebildinin testi yapildi");
+        Driver.closeDriver();
     }
 
     @Test
@@ -179,23 +175,22 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
-
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
         eckHotelsEditRoomPage.maxAdultCountTextBox.clear();
+        extentTest.info("Max Adult Count text box'indaki veriler silindi");
         eckHotelsEditRoomPage.maxAdultCountTextBox.sendKeys(ConfigReader.getProperty("e_maxacf"));
-
+        extentTest.info("Max Adult Count'una valid datalar girildi");
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(eckHotelsEditRoomPage.maxAdultCountTextBox.getText(), ConfigReader.getProperty("e_maxacf"));
-
+        extentTest.pass("Hotel odasinin Max Adult Count'unun degistirilebildinin testi yapildi");
+        Driver.closeDriver();
     }
 
     @Test
@@ -207,23 +202,23 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
 
         eckHotelsEditRoomPage.maxChildrenCountTextBox.clear();
+        extentTest.info("Max Children Count text box'indaki veriler temizlendi");
         eckHotelsEditRoomPage.maxChildrenCountTextBox.sendKeys(ConfigReader.getProperty("e_maxccf"));
-
+        extentTest.info("Max Children Count text box'ina valid datalar girildi");
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna basildi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertEquals(eckHotelsEditRoomPage.maxChildrenCountTextBox.getText(), ConfigReader.getProperty("e_maxccf"));
-
+        extentTest.pass("Hotel odasinin Max Children Count'unun degistirilebildinin testi yapildi");
+        Driver.closeDriver();
     }
 
     @Test
@@ -235,21 +230,22 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
 
         eckHotelsEditRoomPage.isAvailableCheckBox.click();
+        extentTest.info("isAvailable check box'ina tiklandi");
 
         Thread.sleep(2000);
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
+        extentTest.info("Sayfanin en altina inildi");
         Thread.sleep(2000);
 
         eckHotelsEditRoomPage.saveButton.click();
+        extentTest.info("Save butonuna baisldi");
         Thread.sleep(2000);
         Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertFalse(eckHotelsEditRoomPage.isAvailableCheckBox.isSelected());
-
+        extentTest.pass("Hotel odasinin isAvailable durumu degistirilebildiginin testi yapildi");
+        Driver.closeDriver();
     }
 
     @Test
@@ -261,18 +257,14 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         ECKHotelsEditRoomPage eckHotelsEditRoomPage = new ECKHotelsEditRoomPage();
 
         eckHotelsEditRoomPage.logInAndSearch();
-
+        extentTest.info("Otel Odasi sayfasina giris yapildi");
         actions.click(eckHotelsEditRoomPage.editHotelRoomTitle).sendKeys(Keys.END).perform();
-
+        extentTest.info("Sayfanin el altina inildi");
         eckHotelsEditRoomPage.deleteButton.click();
+        extentTest.info("Delete butonuna basildi");
         eckHotelsEditRoomPage.secondOkButton.click();
+        extentTest.info("Ok butonuna basildi");
 
-
-        Assert.assertEquals(ConfigReader.getProperty("e_success_message"), eckHotelsEditRoomPage.successMessage.getText());
-        Thread.sleep(2000);
-
-        Driver.getDriver().navigate().refresh();
-        Assert.assertFalse(eckHotelsEditRoomPage.isAvailableCheckBox.isSelected());
 
     }
 }
