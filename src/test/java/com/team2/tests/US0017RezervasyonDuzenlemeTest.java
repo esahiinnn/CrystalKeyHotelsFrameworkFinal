@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class US0017RezervasyonDuzenlemeTest extends TestBaseRapor {
 
-    @Test
+    @Test git
     public void generalDataDuzenlemeTesti() throws InterruptedException {
 
         extentTest=extentReports.createTest("General data duzenleme testi","Otel duzenleme sayfasindaki General Data bolumundeki datalari degistirip kaydedebilmeliyim");
