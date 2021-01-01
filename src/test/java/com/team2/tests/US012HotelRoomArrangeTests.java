@@ -47,7 +47,6 @@ public class US012HotelRoomArrangeTests extends TestBaseRapor {
         eckHotelsEditRoomPage.okButton.click();
         extentTest.info("Okey butonuna basildi");
 
-
         Driver.closeDriver();
     }
 
