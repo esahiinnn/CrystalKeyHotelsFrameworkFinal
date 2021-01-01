@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CkHotelOdaReservisionTest extends TestBaseRapor {
+public class US014HotelOdaReservisionOlusturmaTest extends TestBaseRapor {
 
     @Test
     public void odaReservisiontest(){

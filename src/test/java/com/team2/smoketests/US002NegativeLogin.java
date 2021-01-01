@@ -7,7 +7,7 @@ import com.team2.utilities.TestBaseRapor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NegativeLogin extends TestBaseRapor {
+public class US002NegativeLogin extends TestBaseRapor {
 
 
     @Test

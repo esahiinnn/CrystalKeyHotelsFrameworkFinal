@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PositiveLogin extends TestBaseRapor {
+public class US001PositiveLogin extends TestBaseRapor {
 
     @Test
     public void positiveLogin1(){
