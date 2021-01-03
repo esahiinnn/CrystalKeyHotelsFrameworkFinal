@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US15InvalidDatalarlaResarvasyonOlusturamama extends TestBaseRapor {
+public class US015InvalidDatalarlaResarvasyonOlusturamama extends TestBaseRapor {
 
     @Test
     public void TC01SelectUserdropdown1Secmeme() throws InterruptedException {
