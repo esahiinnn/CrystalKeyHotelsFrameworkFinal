@@ -75,4 +75,38 @@ public class CkHotelOdaReservisionPage {
 
     @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement okButton;
+
+    @FindBy(xpath = "//label[@for='IDUser']")
+    public WebElement idUserHata1;
+
+    @FindBy(xpath = "//label[@for='IDHotelRoom']")
+    public WebElement idUserHata2;
+
+    @FindBy(xpath = "//label[@for='Price']")
+    public WebElement priceHata;
+
+    @FindBy(xpath = "//label[@for='DateStart']")
+    public WebElement dataStartHata;
+
+    @FindBy(xpath = "//label[@for='DateEnd']")
+    public WebElement dataEndHata;
+
+    @FindBy(xpath = "//label[@for='AdultAmount']")
+    public WebElement adultAmountHata;
+
+    @FindBy(xpath = "//label[@for='ChildrenAmount']" )
+    public WebElement childrenAmountHata;
+
+    @FindBy(xpath = "//label[@for='ContactNameSurname']")
+    public WebElement contactNameHata;
+
+    @FindBy(xpath ="//label[@for='ContactPhone']" )
+    public WebElement contactPhoneHata;
+
+    @FindBy(xpath = "//label[@for='ContactEmail']")
+    public WebElement contactEmailHata;
+
+    @FindBy(xpath ="//label[@for='Notes']" )
+    public WebElement notesHata;
+
 }

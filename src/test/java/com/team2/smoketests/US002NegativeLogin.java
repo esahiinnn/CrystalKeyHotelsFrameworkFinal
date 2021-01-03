@@ -24,7 +24,7 @@ public class US002NegativeLogin extends TestBaseRapor {
         crysHotelHomePage.loginButonu.click();
 
         Assert.assertTrue(crysHotelHomePage.hataMesaji.isDisplayed());
-        extentTest.pass("Test basarili bir sekilde kontrol edildi ve valid datalarla siteye giris yapilamadi");
+        extentTest.pass("Test basarili bir sekilde kontrol edildi ve invalid datalarla siteye giris yapilamadi");
         Driver.closeDriver();
     }
     @Test
@@ -41,7 +41,7 @@ public class US002NegativeLogin extends TestBaseRapor {
         crysHotelHomePage.loginButonu.click();
 
         Assert.assertTrue(crysHotelHomePage.hataMesaji.isDisplayed());
-        extentTest.pass("Test basarili bir sekilde kontrol edildi ve valid datalarla siteye giris yapilamadi");
+        extentTest.pass("Test basarili bir sekilde kontrol edildi ve invalid datalarla siteye giris yapilamadi");
         Driver.closeDriver();
 
     }
@@ -59,7 +59,7 @@ public class US002NegativeLogin extends TestBaseRapor {
         crysHotelHomePage.loginButonu.click();
 
         Assert.assertTrue(crysHotelHomePage.hataMesaji.isDisplayed());
-        extentTest.pass("Test basarili bir sekilde kontrol edildi ve valid datalarla siteye giris yapilamadi");
+        extentTest.pass("Test basarili bir sekilde kontrol edildi ve invalid datalarla siteye giris yapilamadi");
         Driver.closeDriver();
 
     }
