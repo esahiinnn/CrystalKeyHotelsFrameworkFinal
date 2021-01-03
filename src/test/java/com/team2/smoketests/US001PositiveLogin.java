@@ -27,7 +27,7 @@ public class US001PositiveLogin extends TestBaseRapor {
 
 
         String adminUrl=Driver.getDriver().getCurrentUrl();
-        String expntUrl="http://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
+        String expntUrl="https://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
         Assert.assertTrue(adminUrl.contains(expntUrl));
         extentTest.info("Test basarili bir sekilde kontrol edildi sayfaya giris URL i ne ulasildi");
 
@@ -56,7 +56,7 @@ public class US001PositiveLogin extends TestBaseRapor {
         
 
         String adminUrl=Driver.getDriver().getCurrentUrl();
-        String expntUrl="http://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
+        String expntUrl="https://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
         Assert.assertTrue(adminUrl.contains(expntUrl));
         Driver.closeDriver();
 
@@ -72,7 +72,7 @@ public class US001PositiveLogin extends TestBaseRapor {
         crysHotelHomePage.loginButonu.click();
 
         String adminUrl=Driver.getDriver().getCurrentUrl();
-        String expntUrl="http://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
+        String expntUrl="https://qa-environment.crystalkeyhotels.com/Admin/UserAdmin";
         Assert.assertTrue(adminUrl.contains(expntUrl));
 
         Driver.closeDriver();
