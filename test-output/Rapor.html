@@ -46,6 +46,9 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
 			<span class='label blue darken-3 suite-start-time'>Jan 3, 2021 08:36:55 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 1, 2021 05:27:58 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 1, 2021 02:16:57 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 1, 2021 06:30:16 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -61,6 +64,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,6 +112,11 @@
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -126,6 +136,17 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
+						<span class='test-name'>General data duzenleme testi</span>
+						<span class='test-time'>Jan 1, 2021 05:27:58 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 05:27:58 PM</span>
+	<span class='label end-time'>Jan 1, 2021 05:28:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+841ms</span>
+</div>
+<div class='test-desc'>Otel duzenleme sayfasindaki General Data bolumundeki datalari degistirip kaydedebilmeliyim </div>
 						<span class='test-name'>Ck Otel Oda Reservision</span>
 						<span class='test-time'>Jan 3, 2021 08:36:55 PM</span>
 						<span class='test-status right fail'>fail</span>
@@ -135,6 +156,9 @@
 	<span class='label start-time'>Jan 3, 2021 08:36:55 PM</span>
 	<span class='label end-time'>Jan 3, 2021 08:37:38 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 43s+338ms</span>
+	<span class='label start-time'>Jan 1, 2021 02:16:57 PM</span>
+	<span class='label end-time'>Jan 1, 2021 02:17:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+709ms</span>
 </div>
 <div class='test-desc'>Invalid datalarla oda reservasyon yapilmamali </div>
 <div class='test-steps'>
@@ -150,6 +174,10 @@
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
 				<td class='timestamp'>8:37:22 PM</td>
+				<td class='timestamp'>5:28:13 PM</td>
+				<td class='step-details'>
+						CrystalKeyHotels Room Admin sayfasina gidildi
+				<td class='timestamp'>2:17:27 PM</td>
 				<td class='step-details'>
 						Siteye Basarili bir sekilde giris yapildi
 					
@@ -158,6 +186,10 @@
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
 				<td class='timestamp'>8:37:25 PM</td>
+				<td class='timestamp'>5:28:13 PM</td>
+				<td class='step-details'>
+						Valid user name girildi
+				<td class='timestamp'>2:17:30 PM</td>
 				<td class='step-details'>
 						Reservasyon sayfasina basarili bir sekilde gecildi
 					
@@ -166,6 +198,363 @@
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
 				<td class='timestamp'>8:37:27 PM</td>
+				<td class='timestamp'>5:28:13 PM</td>
+				<td class='step-details'>
+						Valid user password girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:13 PM</td>
+				<td class='step-details'>
+						Login butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:13 PM</td>
+				<td class='step-details'>
+						Ck hotels sitesine login olundu
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:18 PM</td>
+				<td class='step-details'>
+						Code Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:18 PM</td>
+				<td class='step-details'>
+						Name Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:18 PM</td>
+				<td class='step-details'>
+						Address Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:18 PM</td>
+				<td class='step-details'>
+						Phone Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:18 PM</td>
+				<td class='step-details'>
+						E-mail Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:19 PM</td>
+				<td class='step-details'>
+						Group dropdown menusunden secim yapildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:19 PM</td>
+				<td class='step-details'>
+						Save butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:28:32 PM</td>
+				<td class='step-details'>
+						generalDataDuzenlemeTesti
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:28:32 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".bootbox\-body"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JNUU3RK3', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\HUSAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 259bf1faffff65e465c42e794b4beb83
+*** Element info: {Using=class name, value=bootbox-body}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.team2.tests.US0017RezervasyonDuzenlemeTest.generalDataDuzenlemeTesti(US0017RezervasyonDuzenlemeTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Husamettin\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/generalDataDuzenlemeTesti20210101052832.png' src='C:\Users\Husamettin\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/generalDataDuzenlemeTesti20210101052832.png' data-src='C:\Users\Husamettin\IdeaProjects\CrystalKeyHotelsFrameworkFinal/test-output/Screenshots/generalDataDuzenlemeTesti20210101052832.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Otel odasi silme testi</span>
+						<span class='test-time'>Jan 1, 2021 05:28:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 05:28:32 PM</span>
+	<span class='label end-time'>Jan 1, 2021 05:28:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+518ms</span>
+</div>
+<div class='test-desc'>Otel duzenleme sayfasinda otel odasi silebilmeliyim </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						CrystalKeyHotels Room Admin sayfasina gidildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						Valid user name girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						Valid user password girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						Login butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						Ck hotels sitesine login olundu
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:51 PM</td>
+				<td class='step-details'>
+						Silinmek istenen odanin details butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:53 PM</td>
+				<td class='step-details'>
+						Delete butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:28:55 PM</td>
+				<td class='step-details'>
+						Hotel Room successfully deleted mesaji goruntulendi
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Otel odasi silme testi</span>
+						<span class='test-time'>Jan 1, 2021 05:28:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 05:28:55 PM</span>
+	<span class='label end-time'>Jan 1, 2021 05:29:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+71ms</span>
+</div>
+<div class='test-desc'>Otel duzenleme sayfasinda otel odasi silebilmeliyim </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						CrystalKeyHotels Room Admin sayfasina gidildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						Valid user name girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						Valid user password girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						Login butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						Ck hotels sitesine login olundu
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:09 PM</td>
+				<td class='step-details'>
+						Hotel List'e tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:10 PM</td>
+				<td class='step-details'>
+						Property'si duzenlenmek istenen hotel details'e tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:13 PM</td>
+				<td class='step-details'>
+						Properties linkine basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:14 PM</td>
+				<td class='step-details'>
+						Code Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:15 PM</td>
+				<td class='step-details'>
+						Value Text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:15 PM</td>
+				<td class='step-details'>
+						Update butonuna basildi
+				<td class='timestamp'>2:17:32 PM</td>
 				<td class='step-details'>
 						Invalid datalar Basarili bir sekilde girildi
 					
@@ -174,6 +563,12 @@
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
 				<td class='timestamp'>8:37:38 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:29:16 PM</td>
+				<td class='step-details'>
+						Value was updated Succesfully mesaji goruntulendi
+				<td class='timestamp'>2:17:33 PM</td>
 				<td class='step-details'>
 						TC05DataEndGeriTarih
 					
@@ -249,6 +644,250 @@ Session ID: 459832241a32e3694ec2926773169a4b
 						</ul>
 					</div>
 				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Otel odasi silme testi</span>
+						<span class='test-time'>Jan 1, 2021 05:29:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 05:29:16 PM</span>
+	<span class='label end-time'>Jan 1, 2021 05:29:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+932ms</span>
+</div>
+<div class='test-desc'>Otel duzenleme sayfasinda otel odasi silebilmeliyim </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						CrystalKeyHotels Room Admin sayfasina gidildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						Valid user name girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						Valid user password girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						Login butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						Ck hotels sitesine login olundu
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:32 PM</td>
+				<td class='step-details'>
+						Hotel List'e tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:33 PM</td>
+				<td class='step-details'>
+						Property'si duzenlenmek istenen hotel details'e tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:35 PM</td>
+				<td class='step-details'>
+						Properties linkine basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:35 PM</td>
+				<td class='step-details'>
+						Remove butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:29:37 PM</td>
+				<td class='step-details'>
+						Value was deleted Succesfully mesaji goruntulendi
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Property ekleme testi</span>
+						<span class='test-time'>Jan 1, 2021 05:29:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 1, 2021 05:29:37 PM</span>
+	<span class='label end-time'>Jan 1, 2021 05:30:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+794ms</span>
+</div>
+<div class='test-desc'>Otel duzenleme sayfasinda Properties bolumunde property ekleyebilmeliyim </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:51 PM</td>
+				<td class='step-details'>
+						CrystalKeyHotels Room Admin sayfasina gidildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:51 PM</td>
+				<td class='step-details'>
+						Valid user name girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:51 PM</td>
+				<td class='step-details'>
+						Valid user password girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:51 PM</td>
+				<td class='step-details'>
+						Login butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:51 PM</td>
+				<td class='step-details'>
+						Ck hotels sitesine login olundu
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:52 PM</td>
+				<td class='step-details'>
+						Hotel List'e tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:53 PM</td>
+				<td class='step-details'>
+						Property eklenecek otelin deails butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:55 PM</td>
+				<td class='step-details'>
+						Properties linkine tiklandi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:55 PM</td>
+				<td class='step-details'>
+						Tip dropdown menusunden secim yapildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:56 PM</td>
+				<td class='step-details'>
+						Code text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:56 PM</td>
+				<td class='step-details'>
+						Value text Box'a data girildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:58 PM</td>
+				<td class='step-details'>
+						Save butonuna basildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:30:03 PM</td>
+				<td class='step-details'>
+						Value added mesaji goruntulendi
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<span class='label start-time'>Jan 1, 2021 06:30:16 PM</span>
+	<span class='label end-time'>Jan 1, 2021 06:30:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-desc'>Hotel odasi silinebilmelidir </div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -316,6 +955,18 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\sila0\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56410}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 459832241a32e3694ec2926773169a4b
 *** Element info: {Using=xpath, value=//label[@for='DateEnd']}
+										<td>Jan 1, 2021 05:27:58 PM</td>
+										<td class='linked' test-id='1'>General data duzenleme testi</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".bootbox\-body"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JNUU3RK3', ip: '192.168.43.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\HUSAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 259bf1faffff65e465c42e794b4beb83
+*** Element info: {Using=class name, value=bootbox-body}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -334,6 +985,13 @@ Session ID: 459832241a32e3694ec2926773169a4b
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
 	at com.team2.tests.US15InvalidDatalarlaResarvasyonOlusturamama.TC05DataEndGeriTarih(US15InvalidDatalarlaResarvasyonOlusturamama.java:185)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.team2.tests.US0017RezervasyonDuzenlemeTest.generalDataDuzenlemeTesti(US0017RezervasyonDuzenlemeTest.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -386,6 +1044,7 @@ Session ID: 459832241a32e3694ec2926773169a4b
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
+					<div class='panel-lead'>5</div>
 					<div class='panel-lead'>1</div>
 				</div>
 			</div>
@@ -399,24 +1058,34 @@ Session ID: 459832241a32e3694ec2926773169a4b
 				<div class='card-panel r'>
 					Start
 					<div class='panel-lead'>Jan 3, 2021 08:36:55 PM</div>
+					<div class='panel-lead'>Jan 1, 2021 05:27:58 PM</div>
+					<div class='panel-lead'>Jan 1, 2021 02:16:57 PM</div>
+					<div class='panel-lead'>Jan 1, 2021 06:30:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
 			 		<div class='panel-lead'>Jan 3, 2021 08:37:38 PM</div>
+
+			 		<div class='panel-lead'>Jan 1, 2021 05:30:03 PM</div>
+			 		<div class='panel-lead'>Jan 1, 2021 02:17:33 PM</div>
+			 		<div class='panel-lead'>Jan 1, 2021 06:31:40 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
 					<div class='panel-lead'>0h 0m 43s+628ms</div>
+					<div class='panel-lead'>0h 2m 4s+986ms</div>
+					<div class='panel-lead'>0h 0m 36s+65ms</div>
+					<div class='panel-lead'>0h 1m 24s+771ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
 				<div class='card-panel dashboard-environment'>
 					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
-					
+          
 					<table>
 						<tr>
 							<th>Name</th>
@@ -445,6 +1114,9 @@ Session ID: 459832241a32e3694ec2926773169a4b
 		<!-- container -->
 		<script>
 			var statusGroup = {
+                parentCount: 5,
+				passParent: 4,
+				failParent: 1,
                 parentCount: 1,
 				passParent: 0,
 				failParent: 1,
@@ -478,6 +1150,10 @@ Session ID: 459832241a32e3694ec2926773169a4b
 		<script>
 			var timeline = {
 			        "Ck Otel Oda Reservision":43.338
+		 var timeline = {
+			        "General data duzenleme testi":33.841,"Otel odasi silme testi":22.518,"Otel odasi silme testi":21.071,"Otel odasi silme testi":20.932,"Property ekleme testi":25.794
+			        "Ck Otel Oda Reservision":35.709
+			        "CrystalKeyHotels Room Arrange":0
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

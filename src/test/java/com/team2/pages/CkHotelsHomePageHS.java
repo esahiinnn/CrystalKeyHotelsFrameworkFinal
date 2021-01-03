@@ -35,9 +35,6 @@ public class CkHotelsHomePageHS {
     @FindBy(xpath = "//a[@href='#tab_general']")
     public WebElement generalData;
 
-    @FindBy(xpath = "//*[@id=\"edit-form\"]/div/div[2]/div/ul/li[3]/a")
-    public WebElement properties;
-
     @FindBy(xpath = "(//input[@class='form-control input-lg required'])[1]")
     public WebElement codeText;
 
