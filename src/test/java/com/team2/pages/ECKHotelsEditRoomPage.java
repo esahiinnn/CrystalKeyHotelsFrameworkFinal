@@ -67,7 +67,7 @@ public class ECKHotelsEditRoomPage {
         eckHotelsHomePage.passwordTextBox.sendKeys(ConfigReader.getProperty("valid_password1"));
         eckHotelsHomePage.logInButton.click();
 
-        eckHotelsAdminPage.nameTextBox.sendKeys(ConfigReader.getProperty("e_names"));
+        eckHotelsAdminPage.codeTextBox.sendKeys(ConfigReader.getProperty("e_codef"));
         eckHotelsAdminPage.searchButton.click();
         Thread.sleep(3000);
 
