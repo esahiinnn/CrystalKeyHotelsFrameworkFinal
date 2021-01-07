@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="PositiveAddHotel">
+    <test name="PositiveAddHotel pozitif ve negatif seneryo">
+        <classes>
+            <class name="com.team2.smoketests.RoomDocumentationsTest"></class>
+        </classes>
+    </test>
+</suite>
