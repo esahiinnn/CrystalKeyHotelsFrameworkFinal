@@ -1,4 +1,4 @@
-package com.team2.smoketests;
+package com.team2.tests;
 
 import com.team2.pages.RoomDocumentationsPage;
 import com.team2.utilities.ConfigReader;
@@ -9,10 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class RoomDocumentationsTest extends TestBaseRapor {
+public class US016RoomDocumentationsTest extends TestBaseRapor {
 
     @Test
     public void excelDownloudTest() throws InterruptedException {

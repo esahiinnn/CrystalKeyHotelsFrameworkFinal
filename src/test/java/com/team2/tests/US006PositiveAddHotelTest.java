@@ -1,4 +1,4 @@
-package com.team2.smoketests;
+package com.team2.tests;
 
 import com.team2.pages.AddHotelPage;
 import com.team2.utilities.ConfigReader;
@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 public class US006PositiveAddHotelTest extends TestBaseRapor {
 
     @Test
+
     public void positiveAddHotelTest() throws InterruptedException {
 
         AddHotelPage addHotelPage=new AddHotelPage();
@@ -118,8 +119,4 @@ public class US006PositiveAddHotelTest extends TestBaseRapor {
 
 
     }
-
-
-
-
 }

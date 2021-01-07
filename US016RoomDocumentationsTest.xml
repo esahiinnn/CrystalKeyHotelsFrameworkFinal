@@ -2,7 +2,7 @@
 <suite name="PositiveAddHotel">
     <test name="PositiveAddHotel pozitif ve negatif seneryo">
         <classes>
-            <class name="com.team2.smoketests.RoomDocumentationsTest"></class>
+            <class name="com.team2.tests.US016RoomDocumentationsTest"></class>
         </classes>
     </test>
 </suite>
