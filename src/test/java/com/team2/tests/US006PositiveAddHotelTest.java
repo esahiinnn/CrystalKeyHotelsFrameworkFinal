@@ -111,7 +111,7 @@ public class US006PositiveAddHotelTest extends TestBaseRapor {
         Thread.sleep(2000);
         extentTest.info("save butonuna tıklayın");
 
-        Assert.assertFalse(addHotelPage.addHotelMessage.isDisplayed());
+        Assert.assertTrue(addHotelPage.addHotelMessage.isDisplayed());
         extentTest.pass("Hotel was inserted successfully mesajı gorulur test basarısız");
 
 

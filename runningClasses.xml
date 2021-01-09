@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Ornek suite">
+    <test name="Ornek tests">
+        <classes>
+            <class name="com.team2.tests.US008OdaEklemeTumTestler"></class>
+            <class name="com.team2.tests.US006PositiveAddHotelTest"></class>
+            <class name="com.team2.tests.US005AnasayfaModulleriTest"></class>
+        </classes>
+    </test>
+</suite>
