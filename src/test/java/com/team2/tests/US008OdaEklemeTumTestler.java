@@ -40,7 +40,7 @@ public class US008OdaEklemeTumTestler {
         Thread.sleep(2000);
         Assert.assertTrue(hotelRoomManagementPage.otelOdasiKaydedildiYazisi.isDisplayed());
         hotelRoomManagementPage.okbutonu.click();
-
+        Driver.closeDriver();
         }
     @Test
     public  void  tc002() throws InterruptedException {
@@ -68,6 +68,6 @@ public class US008OdaEklemeTumTestler {
         Thread.sleep(2000);
         Assert.assertTrue(hotelRoomManagementPage.otelOdasiKaydedildiYazisi.isDisplayed());
         hotelRoomManagementPage.okbutonu.click();
-
+        Driver.closeDriver();
     }
 }
