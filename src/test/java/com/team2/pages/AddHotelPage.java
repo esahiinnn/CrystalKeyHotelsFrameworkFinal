@@ -6,10 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AddHotelPage {
-    public AddHotelPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public AddHotelPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(linkText="Log in")
+
+    @FindBy(xpath = "//*[text()='Log in']")
     public WebElement loginSignin;
     @FindBy(id = "UserName")
     public WebElement usernameTextBox;
@@ -25,18 +26,18 @@ public class AddHotelPage {
     public WebElement addHotel;
     @FindBy(id = "Code")
     public WebElement codeTextBox;
-    @FindBy(id="Name")
+    @FindBy(id = "Name")
     public WebElement nameTextBox;
-    @FindBy(id="Address")
+    @FindBy(id = "Address")
     public WebElement adresTextBox;
-    @FindBy(id="Phone")
+    @FindBy(id = "Phone")
     public WebElement phoneTextBox;
-    @FindBy(id="Email")
+    @FindBy(id = "Email")
     public WebElement emailTextBox;
     @FindBy(id = "IDGroup")
     public WebElement dropdownIDGroup;
     @FindBy(id = "btnSubmit")
-    public  WebElement save;
+    public WebElement save;
     @FindBy(xpath = "//div[text()='Hotel was inserted successfully']")
     public WebElement addHotelMessage;
 
