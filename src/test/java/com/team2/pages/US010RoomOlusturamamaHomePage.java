@@ -60,7 +60,7 @@ public class US010RoomOlusturamamaHomePage {
     @FindBy(xpath = "//span[@class='hidden-480']")
     public WebElement addHotelRoombutonu;
 
-    @Test
+
     public void login(){
         Driver.getDriver().get(ConfigReader.getProperty("ck_hotels_admin_hotel_rooms_url"));
         usernameTextbox.sendKeys(ConfigReader.getProperty("valid_username1"));
