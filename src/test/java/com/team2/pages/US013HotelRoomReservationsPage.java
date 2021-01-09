@@ -17,7 +17,6 @@ public class US013HotelRoomReservationsPage {
     public WebElement searchButton;
 
 
-
     @FindBy(xpath = "(//input[@class='form-control form-filter input-sm'])[1]")
     public WebElement IdTextbox;
 
@@ -44,7 +43,7 @@ public class US013HotelRoomReservationsPage {
 
     public WebElement HotelRoomReservationsPagePriceTextBox;
 
-    @FindBy(xpath = "//tr[1]//td[4]")
+    @FindBy(xpath = "//tr[16]//td[4]")
     public WebElement HotelRoomReservationsPagePriceTextBoxSonuc;
 
     @FindBy(xpath = "(//input[@class='form-control form-filter input-sm'])[3]")
@@ -107,9 +106,6 @@ public class US013HotelRoomReservationsPage {
 
     @FindBy(xpath = "(//select[@class='form-control input-xsmall input-sm input-inline'])[1]")
     public WebElement HotelRoomReservationsPageListofReservationsSayfadaGozukmeMktr;
-
-
-
 
 
 }
